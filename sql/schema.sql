@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS predictions (
+  id SERIAL PRIMARY KEY,
+  tx_time DOUBLE PRECISION,
+  amount DOUBLE PRECISION,
+  fraud_probability DOUBLE PRECISION,
+  is_fraud BOOLEAN,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
